@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hábitad Oasis - Jardindería Profesional</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header class="navbar">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <span class="nav-leaf">🌿</span>
+                <span class="nav-tittle">Hábitad Oasis</span>
+            </div>
+            <button class="nav-hamburger" id="navToggle" aria-label="Abrir menú">☰</button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero">Inicio</a>
+                <a href="#accordion">Servicios</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+     <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-logo-placeholder">
+                <div class="logo-fallback">
+                    <span class="logo-leaf">🌿</span>
+                    <span class="logo-text">HO</span>
+                </div>
+            </div>
+            <p class="hero-tagline">Sembramos vida, cuidamos tu espacio</p>
+            <p class="hero-desc">
+                Somos especialistas en el cuidado,diseño y mantenimiento de zonas verdes en Colombia. Con un equipo profesional y comprometido, hacemos que jardindes, parques y áreas comunes luzcan siempre sanos, limpios y llenos de vida. Nuestra amplia experiencia en el mantenimiento de espacios verdes en la ciudad de Buenos Aires -donde hemos trabajado en parques, plazas, clubes, empresas y conjuntos residenciales- nos respalda. Hoy traemos ese conocimiento y buenas prácticas a Bogotá para ofrecer un servicio confiable, cercano y con resultados visibles desde el primer día"
+            </p>
+            <a href="#accordion"class="hero-cta">Nuestros Servicios</a>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="https://www.w3.org/2000/svg">
+                <path d="M0,40 C360, 80 1080,0 1440,40 L1440,80 L0, 80 Z" fill="#E8F5E1"/>
+            </svg>
+        </div>
+     </section>
+
+     <!-- ACCORDION -->
+      <section class="accordion-section" id="accordion">
+        <div class="container">
+
+            <div class="accordion-item">
+                <button class="accordion-btn" onclick="toggleAccordion('servicios')">
+                <span class="acc-icon">🌿</span>
+                Servicios
+                <span class="acc-arrow" id="arrow-servicios">∇</span>
+                </buttom>
+                <div class="accordion-body" id="body-servicios">
+                    <ul class="acc-list">
+                        <li><span class="acc-dot"></span>Diseño y creación de jardines</li>
+                    <li><span class="acc-dot"></span>Mantenimiento y cuidado de jardines</li>
+                    <li><span class="acc-dot"></span>Poda y limpieza de árboles y plantas</li>
+                        <li><span class="acc-dot"></span>Instalación de sistemas de riego</li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-btn" onclick="toggleAccordion('productos')">
+                    <span class="acc-icon">🌳</span>
+                    productos
+                    <span class="acc-arrow" id="arrow-productos">∇</span>
+                    </button>
+                    <div class="accordion-body" id="body-productos">
+                        <ul class="acc-list">
+                            <li><span class="acc-dot"></span>Jardinería orgánica y sostenible</li>
+                            <Li><span class="acc-dot"></span>Jardinería de interior y diseño de espacios verdes</li>
+                            <Li><span class="acc-dot"></span>Jardinería para empresas y edificios públicos</li>
+                            <Li><span class="acc-dot"></span>Jardinería para eventos y bodas</li>
+                        </ul>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-btn" onclick="toggleAccordion('especializacion')">
+                    <span class="acc-ion">🌳</span>
+                    Especialización
+                    <span class="acc-arrow" id="arrow-especializacion">∇</span>
+                    </buttom>
+                    <div class="accordion-body" id="body-especializacion">
+                        <ul class="acc-list">
+                            <li><span class="acc-dot"></span>Jardinería orgánica y sostenible</li>
+                            <li><span class="acc-dot"></span>Jardinería de interior y diseño de espacios verdes</li>
+                            <li><span class="acc-dot"></span>Jardinería para empresas y edificios públicos</li>
+                            <li><span class="acc-dot"></span>Jardinería para eventos y bodas</li>
+                            </ul>
+                            </div>
+
+                            <div class="accordion-item">
+                            <button class="accordion-btn" onclick="toggleAccordion('galeria')">
+                                <span class="acc-icon">📸</span>
+                                Galería
+                                <span class="acc-arrow" id="arrow-galeria">▼</span>
+                                </button>
+                                <div class="accordion-body" id="body-galeria">
+                                    <div class="gallery-grid" id="galeria">
+                                        <div class="gallery-placeholder">
+                                            <p>📷 Agregar tus fotos en la carpeta <strong>img/</strong> y descomentá el código de la galería.</p>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section>
+
+      <!-- WAVE DIVIDER -->
+       <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="https://www.w3.org/2000/svg">
+            <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0, 60 Z" fill="#D0EEF5"/>
+        </svg>
+       </div>
+
+       <!-- CONTACTO -->
+        <section class="contacto-section" id="contacto">
+            <div class="container contacto-inner">
+                <h2 class="section-tittle">¿Hablamos?</h2>
+                <p class="contacto-sub">¿Escribinos por WhatsApp y te respondemos a la brevedad.</p>
+                <a href="https://wa.me/573196636282?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." target="_blank" class="contacto-wa-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon"/>
+                    Escribir por WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+         <footer class="footer">
+            <p>&copy; 2026 Hábitat Oasis · Bogotá, Colombia</p>
+         </footer>
+
+         <!-- Whatsapp flotante -->
+          <a href="https://wa.me/573196636282?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." target="_blank" class="wa-float" aria-label="Contactar por WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp".svg" alt="WhatsApp" />
+            <span class="wa-tooltip">¡Escribínos</span>
+          </a>
+
+          <script src="js/main.js"></script>
+</body>
+</html>
