@@ -83,7 +83,7 @@ a { text-decoration:none; color: inherit; }
 /* CONTACTO */
 .contacto-section { background: var(--celeste-claro); padding: 72px 24px; text-align: center; }
 .section-title { font-family: var(--ff-display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--verde-oscuro); margin-bottom: 12px; }
-.contacto-sub { color: var(--tierra); font-size: 1rem; margin-bottom: 32px; }
+.contacto-sub { color:#FFFFFF; font-size: 1rem; margin-bottom: 32px; }
 .contacto-wa-btn { display: inline-flex; align-items: center; gap: 12px; background: #25D366; color: var(--blanco); font-weight: 700; font-size: 1rem; padding: 16px 40px; border-radius: 40px; box-shadow: 0 6px 20px rgba(37,211,102,0.35); transition: transform var(--transition), box-shadow var(--transition); }
 .contacto-wa-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
 .wa-icon { width: 26px; height: 26px; }
