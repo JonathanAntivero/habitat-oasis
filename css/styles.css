@@ -72,7 +72,12 @@ a { text-decoration:none; color: inherit; }
 .acc-dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--celeste); margin-top: 5px; box-shadow: 0 0 0 3px rgba(74,173,204,0.18); }
 
 /* GALERIA */
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 600px) {
+    .porque-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 .gallery-item img { width: 100%; height: 180px; object-fit: cover; border-radius: var(--radius); transition: transform var(--transition), box-shadow var(--transition); cursor: pointer; }
 .gallery-item img:hover { transform: scale(1.03); box-shadow: var(--shadow-md); }
 .gallery-placeholder { grid-column: 1 / -1; background: var(--celeste-claro); border: 2px dashed var(--celeste); border-radius: var(--radius); padding: 32px 24px; text-align: center; color: var(--verde-oscuro); font-size: 0.93rem; line-height: 1.7; }
