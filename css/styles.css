@@ -136,8 +136,9 @@ a { text-decoration:none; color: inherit; }
     margin: 0 auto;
     background: #b2ebf2;
     border-radius: 20px;
-    padding: 48px 40px;
+    padding: 32px 16px;
     box-shadow: 0 6px 24px rgba(0, 150, 180, 0.15);
+    box-sizing: border-box;
 }
 
 .porque-inner .section-tittle {
@@ -148,8 +149,20 @@ a { text-decoration:none; color: inherit; }
 
 .porque-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 500px) {
+    .porque-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .porque-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .porque-item {
