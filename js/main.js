@@ -73,10 +73,10 @@ window.addEventListener('scroll', () => {
 
 // Lista de todas las imágenes de la galería (en el orden en que aparecen)
 const imagenesGaleria = [
-    'fotos/habitato8.jpg',
-    'fotos/habitato9.jpg',
-    'fotos/habitato10.jpg',
-    'fotos/habitato11.jpg'
+    'fotos/habitat08.jpg',
+    'fotos/habitat09.jpg',
+    'fotos/habitat10.jpg',
+    'fotos/habitat11.jpg'
     // Si tienes más, agrégalas aquí
 ];
 
