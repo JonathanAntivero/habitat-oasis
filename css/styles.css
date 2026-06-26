@@ -27,10 +27,10 @@ a { text-decoration: none; color: inherit; }
 .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
 
 /* TIPOGRAFÍA COMPARTIDA */
-.eyebrow { text-align: center; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.75rem; font-weight: 600; color: var(--celeste); margin-bottom: 8px; }
+.eyebrow { text-align: center; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.75rem; font-weight: 600; color: var(--verde-vivo); margin-bottom: 8px; }
 .titulo { font-family: var(--ff-display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; text-align: center; margin-bottom: 48px; }
 .titulo.dark { color: var(--verde-oscuro); }
-.titulo.light { color: var(--blanco); }
+.titulo.light { color: var(--verde-oscuro); }
 
 /* NAVBAR */
 .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--verde-oscuro); box-shadow: 0 2px 16px rgba(0,0,0,0.2); }
@@ -89,14 +89,15 @@ a { text-decoration: none; color: inherit; }
 .acc-dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--celeste); margin-top: 5px; box-shadow: 0 0 0 3px rgba(74,173,204,0.18); }
 
 /* POR QUÉ ELEGIRNOS */
-.elegirnos-section { position: relative; background: linear-gradient(135deg, #1E4D26 0%, var(--verde-oscuro) 50%, #2a5a35 100%); padding: 88px 0; overflow: hidden; }
+.elegirnos-section { position: relative; background: var(--celeste-claro); padding: 88px 0; overflow: hidden; }
 .elegirnos-overlay { position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 50%, rgba(107,191,89,0.12) 0%, transparent 60%); pointer-events: none; }
 .razones-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 28px; }
-.razon { background: rgba(255,255,255,0.06); border: 1px solid rgba(107,191,89,0.2); border-radius: var(--radius-lg); padding: 32px 20px; text-align: center; transition: background var(--transition), transform var(--transition); }
+.razon { background: rgba(255,255,255,0.07); border: 1px solid rgba(74,173,204,0.25); border-radius: var(--radius-lg); padding: 32px 20px; text-align: center; transition: background var(--transition), transform var(--transition); }
 .razon:hover { background: rgba(255,255,255,0.10); transform: translateY(-4px); }
-.razon-icon-wrap { font-size: 2.4rem; margin-bottom: 16px; }
-.razon h3 { font-family: var(--ff-display); font-size: 1.05rem; font-weight: 700; color: var(--verde-cesped); margin-bottom: 10px; }
-.razon p { font-size: 0.88rem; color: rgba(255,255,255,0.75); line-height: 1.65; }
+.razon-icon-wrap { width: 100%; height: 160px; margin-bottom: 16px; border-radius: 10px; overflow: hidden; }
+.razon-icon-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.razon h3 { font-family: var(--ff-display); font-size: 1.05rem; font-weight: 700; color: var(--verde-oscuro); margin-bottom: 10px; }
+.razon p { font-size: 0.88rem; color: #555(255,255,255,0.75); line-height: 1.65; }
 
 /* GALERÍA MOSAICO */
 .galeria-section { background: var(--verde-claro); padding: 88px 0; }
